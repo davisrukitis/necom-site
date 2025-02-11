@@ -1,0 +1,220 @@
+/* ------- inizio footer alessandro ----------*/
+
+.body-footer {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: fit-content;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* ------- inizio top box footer ----------*/
+.body-footer .top-box {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+
+.body-footer .top-box .text {
+  font-size: 1.5625rem;
+  line-height: 120%;
+  margin: 0;
+  letter-spacing: -0.03375rem;
+  text-align: center;
+  padding: 0 2em;
+}
+.body-footer .top-box svg {
+  width: 9.5625rem;
+  margin: 2.5rem auto 5rem;
+  height: auto;
+}
+/* ------- fine top box footer ----------*/
+
+/* ------- inizio room box footer ----------*/
+.body-footer .room-box {
+  position: relative;
+  display: flex;
+  width: 93.75rem;
+}
+.body-footer .room-box img {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+.body-footer .room-img-lights {
+  position: absolute;
+  top: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+}
+.body-footer .lights-on {
+  visibility: visible;
+}
+.body-footer .switch-box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.body-footer .switch-box .switch-1 {
+  position: absolute;
+  bottom: 35%;
+  left: 24.8%;
+  width: 2%;
+}
+
+.body-footer .switch-box .switch-2 {
+  position: absolute;
+  bottom: 20%;
+  right: 28%;
+  width: 2%;
+}
+
+.body-footer .switch-box .switch-3 {
+  position: absolute;
+  bottom: 18%;
+  right: 4.6%;
+  width: 2%;
+}
+
+.body-footer .switch-box .switch-button-1,
+.body-footer .switch-box .switch-button-2,
+.body-footer .switch-box .switch-button-3 {
+  position: relative;
+  border: none;
+  background-color: white;
+}
+
+.body-footer .switch-box .light-switch-1,
+.body-footer .switch-box .light-switch-2,
+.body-footer .switch-box .light-switch-3 {
+  position: absolute;
+  width: 200%;
+  bottom: 0;
+  left: -47%;
+  top: 0;
+  right: 0;
+  display: none;
+}
+.body-footer .switch-box .switch-button-1:hover .light-switch-1,
+.body-footer .switch-box .switch-button-2:hover .light-switch-2,
+.body-footer .switch-box .switch-button-3:hover .light-switch-3 {
+  display: block;
+  cursor: pointer;
+}
+/* ------- fine room box footer ----------*/
+
+/* ------- inizio bottom box footer ----------*/
+.body-footer .bottom-box {
+  display: flex;
+  flex-direction: column;
+  gap: 4em;
+  padding: 24px;
+  background-color: var(--color-ikea-blue);
+  width: 100%;
+  box-sizing: border-box;
+}
+.body-footer .bottom-box .links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 24px;
+}
+.body-footer .bottom-box .links a {
+  text-decoration: none;
+  color: white;
+  padding: 4px 12px;
+  /*padding: 0 0.75rem;*/
+  font-stretch: 100%;
+  margin: 0;
+  border-right: 2px solid var(--color-ikea-line);
+  font-size: 1em;
+  line-height: 162.5%;
+  font-weight: 400;
+  min-width: max-content;
+}
+
+.body-footer .bottom-box .links a:last-child {
+  border-right: none;
+}
+.body-footer .bottom-box .info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+.body-footer .bottom-box .info .center {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  color: white;
+}
+
+.bi-c-circle {
+  font-size: 80%;
+}
+
+.body-footer .bottom-box .info a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .body-footer {
+    width: 100%;
+  }
+
+  .body-footer .room-box {
+    position: relative;
+    display: flex;
+    width: 115rem;
+  }
+
+  .body-footer .switch-box .switch-1 {
+    position: absolute;
+    bottom: 28%;
+    left: 42%;
+    width: 2%;
+  }
+
+  .body-footer .switch-box .switch-2,
+  .body-footer .switch-box .switch-3 {
+    display: none;
+  }
+
+  .body-footer .bottom-box .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .body-footer .bottom-box .links a {
+    font-size: 1rem;
+    line-height: 162.5%;
+    margin: 0;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 0.25rem 0.75rem;
+    margin: 0;
+  }
+
+  .body-footer .bottom-box .info {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .body-footer .bottom-box .info .center,
+  .body-footer .bottom-box .info a {
+    padding: 0.3125rem;
+    width: auto;
+  }
+
+  .body-footer .bottom-box .info .center {
+    border-radius: 2;
+  }
+}

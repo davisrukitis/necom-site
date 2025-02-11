@@ -1,0 +1,48 @@
+.video-btn {
+    font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+}
+
+.box-fancy .right-items,
+.carousel .card .video-container,
+.box {
+    position: relative;
+}
+
+.video-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: absolute;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    height: 3.75rem;
+    width: 3.75rem;
+    border-radius: 2rem;
+    background-color: white;
+    color: black;
+    border: none;
+}
+.btn-dark {
+    color: white;
+    background-color: black;
+}
+.video-btn:hover {
+    background-color: rgb(240, 240, 240);
+}
+.btn-dark:hover {
+    background-color: #333;
+}
+
+@media screen and (max-width: 47.9375rem) {
+    .video-btn {
+        height: 2.5rem;
+        width: 2.5rem;
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
