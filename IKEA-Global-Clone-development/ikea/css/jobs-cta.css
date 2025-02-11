@@ -1,0 +1,111 @@
+.cta-section {
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    height: fit-content;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+.cta-card {
+    display: grid;
+    min-height: fit-content;
+    grid-template-columns: 1fr 1fr;
+    border-radius: var(--border-radius-def);
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.cta-card .right-items {
+    width: 100%;
+    height: 100%;
+}
+.cta-card .right-items .image {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.cta-card .left-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.cta-card .left-items .section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f5f5f5;
+    gap: 2rem;
+    max-width: 55ch;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cta-card .left-items .btn {
+    width: 100%;
+    max-width: calc(55ch * 1.1);
+    height: 3.5rem;
+    border: none;
+    border-radius: 1.75rem;
+    background-color: black;
+    color: white;
+    font-family: "Noto Ikea Latin Bold";
+    font-size: 0.875rem;
+    line-height: 143%;
+    transition: background 0.1s ease-in-out;
+}
+.cta-card .left-items .btn:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+@media screen and (max-width: 64rem) {
+    .cta-card .title-big {
+        font-size: 2.25rem;
+        line-height: 120%;
+        font-weight: 700;
+        margin: 1rem 0;
+        letter-spacing: -0.06rem;
+    }
+    .cta-card {
+        grid-template-columns: 1fr;
+    }
+    .cta-card .right-items {
+        grid-row: 1;
+    }
+    .cta-card .right-items .image {
+        max-height: 90vh;
+        aspect-ratio: 16/9;
+    }
+    .cta-card .left-items {
+        padding: 1.5rem 1.5rem 2.25rem 1.5rem;
+    }
+    .cta-card .left-items .section {
+        margin-top: 0;
+        gap: 0;
+    }
+    .cta-card .left-items .btn {
+    }
+}
+@media screen and (max-width: 47.9375rem) {
+    .cta-card .title-big {
+        font-size: 1.5625rem;
+        line-height: 120%;
+        font-weight: 700;
+        letter-spacing: -0.03375rem;
+    }
+    .cta-card .left-items .section {
+        align-items: flex-start;
+    }
+    .cta-card .left-items .btn {
+        font-size: 0.75rem;
+        line-height: 133%;
+        max-width: calc(55ch * 1.3);
+    }
+}
