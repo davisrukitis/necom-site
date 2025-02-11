@@ -1,0 +1,59 @@
+@import "root.css";
+.page-title {
+    padding: 1rem 0;
+    margin-top: calc(150px - var(--nav-height));
+}
+
+.sections-container {
+    margin-bottom: 15rem;
+}
+.divider-container {
+    position: relative;
+    margin: 5rem 0;
+}
+.divider-container:last-child {
+    margin-bottom: 0;
+}
+.divider-container .divider {
+    position: absolute;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+}
+.divider-container .divider:last-child {
+    background-color: rgb(228, 228, 228);
+}
+.title-thin {
+    font-family: "Noto IKEA";
+    font-weight: 300;
+    font-size: 1.5625rem;
+    line-height: 120%;
+    margin: 1rem 0;
+    font-weight: 400;
+    letter-spacing: -0.03375rem;
+}
+@media screen and (max-width: 64rem) {
+    .sections-container {
+        margin-bottom: 5rem;
+    }
+    .title-bigger {
+        font-size: 3.1875rem;
+        line-height: 108%;
+        font-weight: 700;
+        letter-spacing: -0.0925rem;
+    }
+    .page-title {
+        margin-top: calc(120px - var(--nav-height));
+    }
+}
+@media screen and (max-width: 47.9375rem) {
+    .sections-container {
+        margin-bottom: 10rem;
+    }
+    .divider-container {
+        position: relative;
+        margin: 4rem 0;
+    }
+}
