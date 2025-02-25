@@ -1,4 +1,4 @@
-import { useMobileNav } from '../hooks/useMobileNav';
+import useMobileNav from '../hooks/useMobileNav';
 import styles from '../styles/navbar.module.css';
 
 export default function Navbar() {
