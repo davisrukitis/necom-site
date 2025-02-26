@@ -10,17 +10,15 @@ export default function Home() {
         <title>Dr. Ing. h.c. F. Porsche AG</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
-        <link
-          rel="preconnect"
-          href="https://images-porsche.imgix.net"
-          crossOrigin="anonymous"
-        />
+        <link rel="preconnect" href="https://images-porsche.imgix.net" crossOrigin="anonymous" />
       </Head>
       
-      <div>
-        <h1>Welcome to Porsche Clone</h1>
-        <p>This is a clone of the Porsche International website.</p>
-      </div>
+      <main>
+        <header>
+          <h1>Welcome to Porsche Clone</h1>
+          <p>Experience the elegance of Porsche with our website.</p>
+        </header>
+      </main>
 
       {/* External Scripts */}
       <Script src="/public/udg-uc-sdk.min.js" strategy="beforeInteractive" />
